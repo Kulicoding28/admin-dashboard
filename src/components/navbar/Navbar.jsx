@@ -1,6 +1,4 @@
 import {
-  FullscreenExit,
-  LanguageOutlined,
   ListOutlined,
   NotificationsNoneOutlined,
   SearchOutlined,
@@ -12,17 +10,13 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="wrapper">
-        <div className="search">
-          <input type="text" placeholder="Search..." />
-          <SearchOutlined />
-        </div>
+        <h1 className="title">Overview</h1>
         <div className="items">
           <div className="item">
-            <LanguageOutlined className="icon" />
-            English
-          </div>
-          <div className="item">
-            <FullscreenExit className="icon" />
+            <div className="search">
+              <input type="text" placeholder="Search..." />
+              <SearchOutlined />
+            </div>
           </div>
           <div className="item">
             <NotificationsNoneOutlined className="icon" />

@@ -1,10 +1,10 @@
 .navbar {
-  height: 54px;
-  border-bottom: 0.5px solid rgb(231, 228, 228);
+  height: 56px;
   display: flex;
   align-items: center;
   font-size: 15px;
-  color: #232323;
+  color: #b5d5e1;
+  background-color: #232323;
 
   .wrapper {
     display: flex;
@@ -14,15 +14,23 @@
     align-items: center;
     justify-content: space-between;
 
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      color: white;
+    }
+
     .search {
       display: flex;
       align-items: center;
-      border: 0.5px solid lightgray;
+      border: 0.5px solid #b5d5e1;
       padding: 5px;
 
       input {
         border: none;
         outline: none;
+        background: transparent;
+        color: white;
 
         &::placeholder {
           font-size: 16px;
