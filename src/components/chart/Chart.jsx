@@ -60,7 +60,7 @@ const Chart = () => {
             type="monotone"
             dataKey="Total"
             stackId="1"
-            stroke="#b9e303"
+            stroke="gray"
             fill="#b9e303"
           />
         </AreaChart>
