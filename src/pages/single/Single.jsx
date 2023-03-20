@@ -1,6 +1,8 @@
 import React from "react";
+import Chart from "../../components/chart/Chart";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
+import List from "../../components/table/Table";
 import "./single.scss";
 
 const Single = () => {
@@ -15,17 +17,34 @@ const Single = () => {
             <h1 className="title">Information</h1>
             <div className="item">
               <img src="/assets/asset1.jpeg" alt="" className="itemImg" />
-              <div className="detail">
+              <div className="details">
                 <h1 className="itemTitle">Jhony</h1>
                 <div className="detailItem">
                   <span className="itemKey">Email:</span>
                   <span className="itemValue">Jhony@gmail.com</span>
                 </div>
+                <div className="detailItem">
+                  <span className="itemKey">Phone:</span>
+                  <span className="itemValue">62+ 1234 56 78</span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Addres:</span>
+                  <span className="itemValue">Damai Street Depok </span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Contry:</span>
+                  <span className="itemValue">Indonesian</span>
+                </div>
               </div>
             </div>
           </div>
-          <div className="right"></div>
-          <div className="bottom"></div>
+          <div className="right">
+            <Chart aspect={3 / 1} title="User Spanding (Last 6 Month )" />
+          </div>
+        </div>
+        <div className="bottom">
+          <h1 className="title">Last Transactions</h1>
+          <List />
         </div>
       </div>
     </div>
