@@ -1,44 +1,38 @@
 export const userInputs = [
   {
-    id: 1,
+    id: "username",
     label: "Username",
     type: "text",
     placeholder: "john_doe",
   },
   {
-    id: 2,
-    label: "Name and surname",
-    type: "text",
-    placeholder: "John Doe",
-  },
-  {
-    id: 3,
+    id: "email",
     label: "Email",
-    type: "mail",
+    type: "email",
     placeholder: "john_doe@gmail.com",
   },
   {
-    id: 4,
+    id: "phone",
     label: "Phone",
     type: "text",
     placeholder: "+1 234 567 89",
   },
   {
-    id: 5,
+    id: "password",
     label: "Password",
     type: "password",
   },
   {
-    id: 6,
-    label: "Address",
-    type: "text",
-    placeholder: "Elton St. 216 NewYork",
-  },
-  {
-    id: 7,
+    id: "country",
     label: "Country",
     type: "text",
-    placeholder: "INA",
+    placeholder: "USA",
+  },
+  {
+    id: "city",
+    label: "City",
+    type: "text",
+    placeholder: "USA",
   },
 ];
 
@@ -144,5 +138,11 @@ export const roomInputs = [
     label: "Price",
     type: "number",
     placeholder: "100",
+  },
+  {
+    id: "maxTeam",
+    label: "Max Team",
+    type: "number",
+    placeholder: "4",
   },
 ];

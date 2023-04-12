@@ -4,10 +4,12 @@ import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
-import { productInputs, userInputs } from "./formSource";
+import { userInputs } from "./formSource";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
-import { fieldColumns, userColums } from "./datatablesource";
+import { fieldColumns, roomColumns, userColums } from "./datatablesource";
+import NewField from "./pages/newField/NewField";
+import NewRoom from "./pages/newRoom/NewRoom";
 
 function App() {
   const ProtectedRoute = ({ children }) => {
@@ -80,7 +82,33 @@ function App() {
                 path="new"
                 element={
                   <ProtectedRoute>
-                    <New inputs={productInputs} title="Add New Product" />
+                    <NewField />
+                  </ProtectedRoute>
+                }
+              />
+            </Route>
+            <Route path="rooms">
+              <Route
+                index
+                element={
+                  <ProtectedRoute>
+                    <List columns={roomColumns} />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path=":productId"
+                element={
+                  <ProtectedRoute>
+                    <Single />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="new"
+                element={
+                  <ProtectedRoute>
+                    <NewRoom />
                   </ProtectedRoute>
                 }
               />

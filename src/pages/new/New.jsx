@@ -37,6 +37,8 @@ const New = ({ inputs, title }) => {
     }
   };
 
+  console.log(info);
+
   return (
     <div className="new">
       <Sidebar />
